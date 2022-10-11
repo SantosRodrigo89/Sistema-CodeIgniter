@@ -38,6 +38,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/contato', 'Home::contato');
 $routes->get('/empresa', 'Empresa::index');
+$routes->get('/rup', 'RupController::index');
 
 
 /*
