@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-center">
     <div>
-        <h2 class="text-center"><?= $titulo ?></h2>
+    <h1>Clientes</h1>
         <div class="d-flex justify-content-center">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adicionarModal">Adicionar</button>
             <button type="button" class="btn btn-secondary">Home</button>
@@ -11,17 +11,17 @@
     <thead>
         <th>ID</th>
         <th>NOME</th>
-        <th>ATIVO</th>
-        <th>CNPJ</th>
+        <th>EMAIL</th>
+
     </thead>
 
     <tbody>
-        <?php foreach ($empresas as $empresa) : ?>
+        <?php foreach ($Clientes as $cliente) : ?>
             <tr>
-                <td><?= $empresa["id"] ?></td>
-                <td><?= $empresa["razao_social"] ?></td>
-                <td><?= $empresa["ativo"] ?></td>
-                <td><?= $empresa["cpfcnpj"] ?></td>
+                <td><?= $cliente["id"] ?></td>
+                <td><?= $cliente["nome"] ?></td>
+                <td><?= $cliente["email"] ?></td>
+
             </tr>
         <?php endforeach; ?>
     </tbody>

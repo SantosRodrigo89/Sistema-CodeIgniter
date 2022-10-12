@@ -30,6 +30,6 @@ class Empresa extends BaseController
 
     public function adicionar_empresa(string $id = null)
     {
-        mDebug($_POST);
+        print_r($_POST);
     }
 }
