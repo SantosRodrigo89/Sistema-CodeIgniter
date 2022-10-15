@@ -16,4 +16,6 @@ class EmpresaModel extends Model
     protected $validationRules = [];
     protected $validationMessages = [];
     protected $skipValidation = false;
+
+    protected $allowedFields = ["cpfcnpj", "razao_social", "ativo"];
 }

@@ -16,4 +16,6 @@ class UserModel extends Model
     protected $validationRules = [];
     protected $validationMessages = [];
     protected $skipValidation = false;
+
+    protected $allowedFields = ["nome", "email", "senha", "fk_empresas", "ativo"];
 }

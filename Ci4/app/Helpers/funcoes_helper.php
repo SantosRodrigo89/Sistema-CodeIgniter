@@ -2,7 +2,8 @@
 
 function mDebug($dados)
 {
-    echo "<pre>;
+    echo "<pre>";
         print_r($dados);
-    </pre>";
+    echo "</pre>";
+    die();
 }

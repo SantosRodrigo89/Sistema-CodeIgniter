@@ -1,9 +1,12 @@
+<!-- CSS Files -->
+<link href="../assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+
 <div class="d-flex justify-content-center">
     <div>
         <h1>Usuários</h1>
         <div class="d-flex justify-content-center">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adicionarModal">Adicionar</button>
-            <button type="button" class="btn btn-secondary">Home</button>
+            <a href="/" type="button" class="btn btn-secondary">Home</a>
         </div>
     </div>
 </div>
@@ -14,6 +17,7 @@
         <th>EMAIL</th>
         <th>SENHA</th>
         <th>ATIVO</th>
+        <th>EMPRESA</th>
 
     </thead>
 
@@ -25,6 +29,7 @@
                 <td><?= $usuario["email"] ?></td>
                 <td><?= $usuario["senha"] ?></td>
                 <td><?= $usuario["ativo"] ?></td>
+                <td><?= $usuario["razao_social"]?></td>
             </tr>
         <?php endforeach; ?>
     </tbody>

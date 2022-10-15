@@ -1,9 +1,12 @@
+<!-- CSS Files -->
+<link href="../assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+
 <div class="d-flex justify-content-center">
     <div>
         <h2 class="text-center"><?= $titulo ?></h2>
         <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adicionarModal">Adicionar</button>
-            <button type="button" class="btn btn-secondary">Home</button>
+            <button type="button" class="btn btn-primary"  id="bt-adicionar">Adicionar</button>
+            <a href="/" type="button" class="btn btn-secondary">Home</a>
         </div>
     </div>
 </div>
@@ -22,6 +25,8 @@
                 <td><?= $empresa["razao_social"] ?></td>
                 <td><?= $empresa["ativo"] ?></td>
                 <td><?= $empresa["cpfcnpj"] ?></td>
+                <td><button class="bt-editar btn btn-warning" data-id="<?= $empresa["id"] ?>">Editar</button></td>
+                <td><button class="bt-excluir btn btn-danger" data-id="<?= $empresa["id"] ?>">Excluir</button></td>
             </tr>
         <?php endforeach; ?>
     </tbody>

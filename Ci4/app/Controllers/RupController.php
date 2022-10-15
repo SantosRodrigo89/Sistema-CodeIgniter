@@ -17,4 +17,5 @@ class RupController extends BaseController
 
         return view($this->_base . "index", $dadosRup);
     }
+
 }
