@@ -18,6 +18,8 @@
   <link href="../assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <link id="pagestyle" href="../assets/css/argon-dashboard.min.css" rel="stylesheet" />
+
 </head>
 
 <body class="">
