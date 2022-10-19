@@ -42,6 +42,9 @@ $routes->post('/login', 'LoginController::login');
 
 $routes->get('/usuarios', 'UserController::index');
 $routes->post('/usuarios/adicionar', 'UserController::adicionar_usuario');
+$routes->post('/usuarios/remover', 'UserController::deletar_usuario');
+$routes->post('/usuarios/editar', 'UserController::editar_usuario');
+$routes->get('/usuarios/get-dados/(:num)', 'UserController::get_dados/$1');
 
 $routes->get('/clientes', 'ClientController::index');
 $routes->post('/clientes/adicionar', 'ClientController::adicionar_cliente');

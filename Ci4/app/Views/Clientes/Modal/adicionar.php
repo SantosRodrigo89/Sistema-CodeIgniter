@@ -3,8 +3,8 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="adicionarModalLabel">Adicionar Cliente</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5" id="adicionarModalLabel2">Adicionar Cliente</h1>
+           <!--      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
             </div>
             <form action="<?= base_url("clientes/adicionar") ?>" method="POST">
                 <div class="modal-body">
@@ -25,12 +25,12 @@
                                 <option value="<?= $empresa["id"] ?>"> <?= $empresa["razao_social"] ?> </option>
                             <?php endforeach ?>
                         </select>
-
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                       <!--  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button> -->
                         <button type="submit" class="btn btn-primary">Salvar</button>
                     </div>
+                </div>
             </form>
         </div>
     </div>

@@ -5,7 +5,7 @@
     <div>
         <h1>Clientes</h1>
         <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adicionarModal">Adicionar</button>
+            <button type="button" class="btn btn-primary" id="bt-adicionar">Adicionar</button>
             <a href="/" type="button" class="btn btn-secondary">Home</a>
         </div>
     </div>

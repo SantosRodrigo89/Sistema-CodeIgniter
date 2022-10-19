@@ -23,11 +23,11 @@ class UserController extends BaseController
             "Usuarios" => $this->userModel->join("empresas","fk_empresas = empresas.id")->findAll(),
             "Empresas" => $empresaModel->findAll()
         ];
-
+        $js["js"] = view($this->_base . "js/main.js");
         echo view("include/header");
         echo view($this->_base . "index", $dadosUser);
         echo view($this->_base . "Modal/adicionar", $dadosUser);
-        echo view("include/footer");
+        echo view("include/footer", $js);
     }
 
     public function adicionar_usuario()

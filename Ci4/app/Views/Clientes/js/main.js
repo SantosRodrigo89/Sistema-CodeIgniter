@@ -28,3 +28,9 @@ $(".bt-editar").on("click", function () {
       });
     
   });
+
+  $("#bt-adicionar").on("click", function () {
+    $("#adicionarModal").modal("show");
+   
+    
+  });

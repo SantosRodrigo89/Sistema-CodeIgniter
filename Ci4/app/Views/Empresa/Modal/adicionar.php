@@ -4,7 +4,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="adicionarModalLabel2">Adicionar Empresa</h1>
-               <!--  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                <!--  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
             </div>
             <form action="<?= base_url("empresas/adicionar") ?>" method="POST">
                 <div class="modal-body">
