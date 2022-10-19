@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Controllers;
-
 use App\Models\UserModel;
 use App\Models\EmpresaModel;
 use CodeIgniter\API\ResponseTrait;
@@ -22,7 +21,7 @@ class UserController extends BaseController
         $empresaModel = new EmpresaModel();
 
         $dadosUser = [
-            "Usuarios" => $this->userModel->join("empresas", "fk_empresas = empresas.id")->findAll(),
+            "Usuarios" => $this->userModel->select(["usuarios.id", "usuarios.nome", "usuarios.email", "usuarios.senha", "usuarios.ativo",  "empresas.razao_social"])->join("empresas", "fk_empresas = empresas.id")->findAll(),
             "Empresas" => $empresaModel->findAll()
         ];
         $js["js"] = view($this->_base . "js/main.js");
@@ -50,7 +49,7 @@ class UserController extends BaseController
         $userModel = new UserModel();
         return $this->respond($userModel->find(["id" => $id]), 200);
     }
-   
+
     public function editar_usuario()
     {
         $data = [
