@@ -69,6 +69,6 @@ class UserController extends BaseController
     {
         $userModel = new UserModel();
         $userModel->delete($_POST["userid"]);
-        return redirect()->to(base_url("clientes"));
+        return redirect()->to(base_url("usuarios"));
     }
 }

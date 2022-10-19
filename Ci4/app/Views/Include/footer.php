@@ -1,28 +1,48 @@
 <footer class="footer">
     <div class="container-fluid">
-        <ul class="nav">
+        <!--    <ul class="nav">
             <li class="nav-item">
                 <a href="javascript:void(0)" class="nav-link">
-                    Diereitos Reservados
+                    Rodrigo Vieira Batista dos Santos
                 </a>
             </li>
             <li class="nav-item">
-                <a href="javascript:void(0)" class="nav-link">
-                    About Us
-                </a>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <div>
+                    <a href="https://github.com/SantosRodrigo89" class="nav-link">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
             </li>
             <li class="nav-item">
-                <a href="javascript:void(0)" class="nav-link">
-                    Blog
-                </a>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <div>
+                    <a href="https://www.linkedin.com/in/rodrigo-s-b9ba696a/" class="nav-link">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
             </li>
-        </ul>
+        </ul> -->
         <div class="copyright">
-            ©
-            <script>
-                document.write(new Date().getFullYear())
-            </script>2018 made with <i class="tim-icons icon-heart-2"></i> by
-            <a href="javascript:void(0)" target="_blank">Creative Tim</a> for a better web.
+            © made with <i class="tim-icons icon-heart-2"></i> by
+            <a href="https://gitlab.com/SantosRodrigo89" target="_blank">Rodrigo Vieira Batista dos Santos</a>
+            <li class="nav-item">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <div>
+                    <a href="https://github.com/SantosRodrigo89" class="nav-link">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <div>
+                    <a href="https://www.linkedin.com/in/rodrigo-s-b9ba696a/" class="nav-link">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+            </li>
+            leveling up, onde day at a time
         </div>
     </div>
 </footer>

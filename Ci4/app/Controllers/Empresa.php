@@ -24,7 +24,6 @@ class Empresa extends BaseController
             "titulo" => "empresas"
         ];
         $js["js"] = view($this->_base . "js/main.js");
-        /*   return view($this->_base . "index", $dadosEmpresa); */
         echo view("include/header");
         echo view($this->_base . "index", $dadosEmpresa);
         echo view($this->_base . "Modal/adicionar", $dadosEmpresa);
@@ -63,8 +62,6 @@ class Empresa extends BaseController
 
     public function remover_empresa($id = null)
     {
-        mDebug($id);
-        
-        return $this->respond($this->empresaModel->delete([ "id" => $id]), 200);
+        return $this->respond($this->empresaModel->delete(["id" => $id]), 200);
     }
 }
