@@ -4,7 +4,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="adicionarModalLabel2">Adicionar Cliente</h1>
-           <!--      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                <!--      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
             </div>
             <form action="<?= base_url("clientes/adicionar") ?>" method="POST">
                 <div class="modal-body">
@@ -26,8 +26,13 @@
                             <?php endforeach ?>
                         </select>
                     </div>
+                    <div class="mb-3">
+                        <label for="exampleInputAtivo1" class="form-label">Ativo</label>
+                        <input type="checkbox" name="ativo" id="exampleCheckbox">
+                        </input>
+                    </div>
                     <div class="modal-footer">
-                       <!--  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button> -->
+                        <!--  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button> -->
                         <button type="submit" class="btn btn-primary">Salvar</button>
                     </div>
                 </div>

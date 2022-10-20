@@ -39,6 +39,7 @@ class ClientController extends BaseController
         $data = [
             'nome' => $_POST["nome"],
             "email" => $_POST["email"],
+            "ativo" => isset($_POST["ativo"]) ? "S" : "N",
             "fk_empresas" => $_POST["empresa"],
         ];
 
@@ -57,7 +58,7 @@ class ClientController extends BaseController
         $data = [
             'nome' => $_POST["nome"],
             "email" => $_POST["email"],
-            "ativo" => $_POST["ativo"],
+            "ativo" => isset($_POST["ativo"]) ? "S" : "N",
             "fk_empresas" => $_POST["empresa"]
         ];
 
