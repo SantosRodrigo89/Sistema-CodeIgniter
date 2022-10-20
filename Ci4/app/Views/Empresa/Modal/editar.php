@@ -4,7 +4,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="adicionarModalLabel">Editar Empresa</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           <!--      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
             </div>
             <form action="<?= base_url("empresas/editar") ?>" method="POST">
                 <input type="hidden" name="id" id="exampleInputId" />
@@ -23,7 +23,7 @@
                         </input>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <!--       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button> -->
                         <button type="submit" class="btn btn-primary">Salvar</button>
                     </div>
                 </div>

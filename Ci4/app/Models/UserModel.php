@@ -18,4 +18,10 @@ class UserModel extends Model
     protected $skipValidation = false;
 
     protected $allowedFields = ["nome", "email", "senha", "fk_empresas", "ativo"];
+
+    public function findAllVw($filter = [], $fields = [])
+    {
+
+        return  $this->db->table("vw_usuarios")->select($fields)->where($filter)->get()->getResultArray();
+    }
 }

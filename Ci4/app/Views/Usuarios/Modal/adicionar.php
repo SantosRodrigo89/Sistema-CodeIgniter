@@ -29,6 +29,11 @@
                                 <option value="<?= $empresa["id"] ?>"> <?= $empresa["razao_social"] ?> </option>
                             <?php endforeach ?>
                         </select>
+                        <div class="mb-3">
+                        <label for="exampleInputAtivo1" class="form-label">Ativo</label>
+                        <input type="checkbox" name="ativo" id="exampleCheckbox">
+                        </input>
+                    </div>
 
                     </div>
                     <div class="modal-footer">

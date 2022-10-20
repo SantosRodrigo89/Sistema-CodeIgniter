@@ -30,10 +30,11 @@
                 <td><?= $usuario["senha"] ?></td>
                 <td><?= $usuario["ativo"] ?></td>
                 <td><?= $usuario["razao_social"]?></td>
+                <td><button class="bt-editar btn btn-warning" data-id="<?= $usuario["id"] ?>">Editar</button></td>
                 <td>
                     <form action="<?= base_url("usuarios/remover") ?>" method="POST">
                         <input type="hidden" name="userid" value=<?= $usuario["id"] ?>>
-                        <button type="submit" class="btn btn-danger btn-sm">Excluir</button>
+                        <button type="submit" class="btn btn-danger">Excluir</button>
                     </form>
                 </td>
             </tr>

@@ -21,7 +21,7 @@ class Empresa extends BaseController
         $empresaModel = new EmpresaModel();
         $dadosEmpresa = [
             "empresas" =>  $this->empresaModel->findAll(),
-            "titulo" => "empresas"
+            "titulo" => "Empresas"
         ];
         $js["js"] = view($this->_base . "js/main.js");
         echo view("include/header");

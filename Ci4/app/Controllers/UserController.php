@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\UserModel;
 use App\Models\EmpresaModel;
 use CodeIgniter\API\ResponseTrait;
@@ -19,14 +20,15 @@ class UserController extends BaseController
     public function index()
     {
         $empresaModel = new EmpresaModel();
-
         $dadosUser = [
-            "Usuarios" => $this->userModel->select(["usuarios.id", "usuarios.nome", "usuarios.email", "usuarios.senha", "usuarios.ativo",  "empresas.razao_social"])->join("empresas", "fk_empresas = empresas.id")->findAll(),
+            "Usuarios" => $this->userModel->findAllVw(),
+            /* select(["usuarios.id", "usuarios.nome", "usuarios.email", "usuarios.senha", "usuarios.ativo",  "empresas.razao_social"])->join("empresas", "fk_empresas = empresas.id")->findAll(), */
             "Empresas" => $empresaModel->findAll()
         ];
         $js["js"] = view($this->_base . "js/main.js");
         echo view("include/header");
         echo view($this->_base . "index", $dadosUser);
+        echo view($this->_base . "Modal/editar", $dadosUser);
         echo view($this->_base . "Modal/adicionar", $dadosUser);
         echo view("include/footer", $js);
     }
@@ -55,7 +57,7 @@ class UserController extends BaseController
         $data = [
             'nome' => $_POST["nome"],
             "email" => $_POST["email"],
-            "ativo" => $_POST["ativo"],
+            "ativo" => isset($_POST["ativo"]) ? "S" : "N",
             "senha" => $_POST["senha"],
             "fk_empresas" => $_POST["empresa"]
         ];
