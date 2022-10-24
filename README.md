@@ -1,2 +1,5 @@
-# cursoCodeIgniter
-Curso introdutório a framework Code Igniter
+# Sistema CodeIgniter
+
+-> Sistema CRUD desenvolvido em CodeIgniter <-
+
+
